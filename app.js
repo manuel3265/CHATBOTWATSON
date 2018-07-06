@@ -74,7 +74,7 @@ function updateMessage(input, response) {
   } else {
     return response;
   }
-  if (response.intents && response.intents[0]) {
+  if (response.intents && response.intents[0].intent === "saludar") {
     var intent = response.intents[0];
     // Depending on the confidence of the response the app can return different messages.
     // The confidence will vary depending on how well the system is trained. The service will always try to assign
