@@ -90,7 +90,7 @@ function updateMessage(input, response) {
     }
   }
   response.output.text = responseText;
-  return response;
+  return "fdghg";
 }
 
 module.exports = app;
