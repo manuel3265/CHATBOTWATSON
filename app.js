@@ -72,9 +72,10 @@ function updateMessage(input, response) {
   if (!response.output) {
     response.output = {};
   } else {
-    //if (response.intents[0].itent === "saludar") {
-    return response;
-    //}
+    //if (response.intents[0].intent === undefined)
+    if (response.intents[0].intent === "saludar") {
+      return response;
+    }
   }
   if (response.intents && response.intents[0]) {
     var intent = response.intents[0];
