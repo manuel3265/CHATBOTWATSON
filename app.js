@@ -72,8 +72,8 @@ function updateMessage(input, response) {
   if (!response.output) {
     response.output = {};
   } else {
-    //if (response.intents[0].intent === undefined)
-    if (response.intents[0].intent === "saludar") {
+    if (response.intents[0].intent === undefined){
+    //if (response.intents[0].intent === "saludar") {
       return response;
     }
   }
