@@ -72,7 +72,9 @@ function updateMessage(input, response) {
   if (!response.output) {
     response.output = {};
   } else {
-    return "primero";
+    if (response.intents && response.intents[0].itent === "saludar") {
+    return response;
+    }
   }
   if (response.intents && response.intents[0].intent === "saludar") {
     var intent = response.intents[0];
